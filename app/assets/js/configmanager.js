@@ -524,7 +524,9 @@ function defaultJavaConfig8(ram) {
             '-XX:+UseConcMarkSweepGC',
             '-XX:+CMSIncrementalMode',
             '-XX:-UseAdaptiveSizePolicy',
-            '-Xmn128M'
+            '-Xmn512M',
+            '-XX:MetaspaceSize=512M',
+            '-XX:MaxMetaspaceSize=512M'
         ],
     }
 }
